@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import About from "./About";
 import Home from "./Home";
 
 import "./Navbar.css";
 
 const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-md navbar-light bg-light font-weight-bold">
+		<nav className="navbar navbar-expand-md navbar-dark bg-light font-weight-bold">
 			<div className="container-fluid">
 				<a className="navbar-brand" href={Home}>
-					Navbar
+					VChat
 				</a>
 				<button
 					className="navbar-toggler"
@@ -26,21 +25,13 @@ const Navbar = () => {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<ul className="navbar-nav">
 						<li className="nav-item">
-							<Link to="/">
-								<a
-									className="nav-link"
-									aria-current="page"
-									href={Home}
-								>
-									Home
-								</a>
+							<Link to="/" className="nav-link">
+								Home
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/about">
-								<a className="nav-link" href={About}>
-									About
-								</a>
+							<Link to="/about" className="nav-link">
+								About
 							</Link>
 						</li>
 					</ul>

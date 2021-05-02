@@ -1,5 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* background-color: rgb(51, 78, 105); */
+}
+body {
+	background-color: rgb(41, 44, 52);
 }

@@ -1,0 +1,13 @@
+* {
+	text-decoration: none;
+}
+
+:not(button) {
+	color: gainsboro;
+}
+
+button {
+	width: 12rem;
+	height: 3rem;
+	border-radius: 5px !important;
+}
