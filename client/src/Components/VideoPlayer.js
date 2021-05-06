@@ -29,9 +29,8 @@ const VideoPlayer = () => {
 					</div>
 				)}
 				{/* Other's video */}
-				<div className="col-md-2"></div>
 				{callAccepted && !callEnded && (
-					<div className="col-md-5 col-sm-12">
+					<div className="col-md-5 offset-md-1 col-sm-12">
 						<h5 className="m-3 p-3">{call.name || "Name"}</h5>
 						<video
 							playsInline

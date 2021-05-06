@@ -1,18 +1,16 @@
 /* eslint-disable react/style-prop-object */
 import React from "react";
 import Fade from "react-reveal/Fade";
+import homeScreen from "../assets/homeScreen.png";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
 	return (
-		<>
+		<div className="mt-5">
 			<div className="d-flex justify-content-between">
 				<Fade left cascade delay={500}>
-					<img
-						alt="Interface"
-						src="https://secure.skypeassets.com/content/dam/scom/all-features/skype-web/windows-edge-skype-web-main.png"
-					/>
+					<img alt="Interface" src={homeScreen} />
 				</Fade>
 				<Fade right cascade delay={500}>
 					<div>
@@ -37,7 +35,7 @@ const Home = () => {
 					</Link>
 				</Fade>
 			</div>
-		</>
+		</div>
 	);
 };
 

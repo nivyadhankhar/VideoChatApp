@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		display: "flex",
 		flexDirection: "column",
+		color: "gainsboro !important",
 	},
 	gridContainer: {
 		width: "100%",
@@ -41,7 +42,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	paper: {
 		padding: "10px 20px",
-		border: "2px solid black",
+		border: "1px solid gainsboro",
+		background: "rgb(32, 36, 42)",
 	},
 }));
 
@@ -59,7 +61,7 @@ const Options = ({ children }) => {
 	const classes = useStyles();
 
 	return (
-		<Container className={classes.container}>
+		<Container className="container m-5">
 			<Paper elevation={10} className={classes.paper}>
 				<form className={classes.root} noValidate autoComplete="off">
 					<Grid container className={classes.gridContainer}>
@@ -99,7 +101,7 @@ const Options = ({ children }) => {
 							/>
 							{callAccepted && !callEnded ? (
 								<Button
-									variant="contained"
+									variant="outlined"
 									color="secondary"
 									startIcon={
 										<PhoneDisabled fontSize="large" />
