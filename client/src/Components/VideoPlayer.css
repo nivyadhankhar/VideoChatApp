@@ -1,0 +1,14 @@
+.paper {
+	background-color: rgb(32, 36, 42);
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid grey;
+}
+video {
+	width: 450px;
+}
+@media screen and (max-width: 576px) {
+	video {
+		width: 300px;
+	}
+}

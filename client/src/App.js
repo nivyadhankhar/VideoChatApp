@@ -6,6 +6,7 @@ import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import Error from "./Components/Error";
 import Main from "./Components/Main";
+import { ContextProvider } from "./SocketContext";
 
 const App = () => {
 	return (
@@ -15,7 +16,9 @@ const App = () => {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route path="/about" component={About} />
-					<Route path="/call" component={Main} />
+					<ContextProvider>
+						<Route path="/call" component={Main} />
+					</ContextProvider>
 					<Route component={Error} />
 				</Switch>
 			</div>
