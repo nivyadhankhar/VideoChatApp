@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
@@ -6,7 +7,7 @@ import "./Home.css";
 const Home = () => {
 	return (
 		<>
-			<div class="d-flex justify-content-between">
+			<div className="d-flex justify-content-between">
 				<Fade left cascade delay={500}>
 					<img
 						alt="Interface"
@@ -27,10 +28,10 @@ const Home = () => {
 					</div>
 				</Fade>
 			</div>
-			<div class="d-flex justify-content-center mt-5 pt-2">
+			<div className="d-flex justify-content-center mt-5 pt-2">
 				<Fade bottom delay={1500}>
 					<Link to="/call">
-						<button type="button" class="btn btn-primary">
+						<button type="button" className="btn btn-primary">
 							Click Here!
 						</button>
 					</Link>

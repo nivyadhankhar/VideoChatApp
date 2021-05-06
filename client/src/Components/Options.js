@@ -1,10 +1,10 @@
 import React from "react";
 
-const Options = ({ children }) => {
+const Options = ({ props }) => {
 	return (
 		<>
 			<h3>Options</h3>
-			{children}
+			{props}
 		</>
 	);
 };
