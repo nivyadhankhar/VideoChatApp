@@ -4,7 +4,12 @@ const About = () => {
 	return (
 		<>
 			<div className="container">
-				<h1>This is about page</h1>
+				<strong>
+					This is a Video Chat App made in ReactJS with the help of
+					NodeJS, Socket.io and WebRTC
+				</strong>
+				<br></br>
+				<small>V 1.0.0</small>
 			</div>
 		</>
 	);

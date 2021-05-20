@@ -8,9 +8,9 @@ const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-md navbar-dark bg-light font-weight-bold">
 			<div className="container-fluid">
-				<a className="navbar-brand" href={Home}>
+				<Link className="navbar-brand" to="/">
 					VChat
-				</a>
+				</Link>
 				<button
 					className="navbar-toggler"
 					type="button"

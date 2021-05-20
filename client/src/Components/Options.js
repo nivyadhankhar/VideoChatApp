@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		display: "flex",
 		flexDirection: "column",
-		color: "gainsboro !important",
 	},
 	gridContainer: {
 		width: "100%",
@@ -42,21 +41,17 @@ const useStyles = makeStyles((theme) => ({
 	},
 	paper: {
 		padding: "10px 20px",
-		border: "1px solid gainsboro",
-		background: "rgb(32, 36, 42)",
+		border: "1px solid black",
+		background: "gainsboro",
+	},
+	black: {
+		color: "black",
 	},
 }));
 
 const Options = ({ children }) => {
-	const {
-		me,
-		callAccepted,
-		name,
-		setName,
-		callEnded,
-		leaveCall,
-		callUser,
-	} = useContext(SocketContext);
+	const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } =
+		useContext(SocketContext);
 	const [idToCall, setIdToCall] = useState("");
 	const classes = useStyles();
 
@@ -66,7 +61,11 @@ const Options = ({ children }) => {
 				<form className={classes.root} noValidate autoComplete="off">
 					<Grid container className={classes.gridContainer}>
 						<Grid item xs={12} md={6} className={classes.padding}>
-							<Typography gutterBottom variant="h6">
+							<Typography
+								className={classes.black}
+								gutterBottom
+								variant="h6"
+							>
 								Account Info
 							</Typography>
 							<TextField
@@ -90,7 +89,11 @@ const Options = ({ children }) => {
 							</CopyToClipboard>
 						</Grid>
 						<Grid item xs={12} md={6} className={classes.padding}>
-							<Typography gutterBottom variant="h6">
+							<Typography
+								className={classes.black}
+								gutterBottom
+								variant="h6"
+							>
 								Make a call
 							</Typography>
 							<TextField
