@@ -105,7 +105,7 @@ const Options = ({ children }) => {
 							/>
 							{callAccepted && !callEnded ? (
 								<Button
-									variant="outlined"
+									variant="contained"
 									color="secondary"
 									startIcon={
 										<PhoneDisabled fontSize="large" />
